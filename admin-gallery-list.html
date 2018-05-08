@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Stealth - Gallery Manager List</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="Preview page of Metronic Admin Theme #4 for statistics, charts, recent events and reports" name="description" />
+        <meta content="" name="author" />
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link href="assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL STYLES -->
+        <link href="assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME GLOBAL STYLES -->
+
+        <!-- BEGIN THEME LAYOUT STYLES -->
+        <link href="assets/layouts/layout4/css/layout.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/layouts/layout4/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
+        <link href="assets/layouts/layout4/css/custom.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME LAYOUT STYLES -->
+        <link rel="shortcut icon" href="favicon.ico" /> </head>
+
+        <link href="assets/global/plugins/toggle/bootstrap-toggle.css" rel="stylesheet">
+        <script src="assets/global/plugins/toggle/bootstrap-toggle.js"></script>
+
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link href="assets/global/plugins/cubeportfolio/css/cubeportfolio.css" rel="stylesheet" type="text/css" />
+
+    <!-- END HEAD -->
+
+    <body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo">
+        <!-- BEGIN HEADER -->
+        <div class="page-header navbar navbar-fixed-top">
+            <!-- BEGIN HEADER INNER -->
+            <div class="page-header-inner ">
+                <!-- BEGIN LOGO -->
+                <div class="page-logo">
+                    <a href="index.html">
+                        <img src="assets/layouts/layout/img/logo-light.png" alt="logo" class="logo-default" /> </a>
+                    <div class="menu-toggler sidebar-toggler">
+                        <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+                    </div>
+                </div>
+                <!-- END LOGO -->
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
+                <!-- END RESPONSIVE MENU TOGGLER -->
+                <!-- BEGIN PAGE ACTIONS -->
+                 <!-- BEGIN HEADER SEARCH BOX -->
+                    <!-- DOC: Apply "search-form-expanded" right after the "search-form" class to have half expanded search box -->
+                    <form class="search-form" action="page_general_search_2.html" method="GET">
+                        <div class="input-group">
+                            <input type="text" class="form-control input-sm" placeholder="Search..." name="query">
+                            <span class="input-group-btn">
+                                <a href="javascript:;" class="btn submit">
+                                    <i class="icon-magnifier"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </form>
+                    <!-- END HEADER SEARCH BOX -->
+                <!-- BEGIN PAGE TOP -->
+                <div class="page-top">
+                 
+                    <!-- BEGIN TOP NAVIGATION MENU -->
+                    <div class="top-menu">
+                        <ul class="nav navbar-nav pull-right">
+                        	<!-- END INBOX DROPDOWN -->
+                            <li class="separator hide"> </li>
+                        	<!-- BEGIN TODO DROPDOWN -->
+                            <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                            <li class="dropdown dropdown-extended dropdown-inbox dropdown-dark" id="header_task_bar">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <i class="icon-users"></i>
+                                    <span class="badge badge-primary"> 3 </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="external">
+                                          <ul class="nav nav-tabs">
+                                        <li class="active">
+                                            <a href="#portlet_comments_1" data-toggle="tab"> Latest </a>
+                                        </li>
+                                        <li>
+                                            <a href="#portlet_comments_2" data-toggle="tab"> Popularity </a>
+                                        </li>
+                                        <li>
+                                            <a href="#portlet_comments_3" data-toggle="tab"> Sales </a>
+                                        </li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    	<div class="tab-content portlet-title tabbable-line">
+                            <div class="tab-pane active" id="portlet_comments_1">
+                                <div class="portlet-body">
+                                  <ul class="dropdown-menu-list scroller portlet light " style="height: 275px;" data-handle-color="#637283">
+                                        	
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong - <b>Support request</b></span>
+                                                        <span class="time">Just Now </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe - <b>Support request</b></span>
+                                                        <span class="time">16 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar1.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Bob Nilson - <b>Support request</b></span>
+                                                        <span class="time">2 hrs </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong - <b>Support request</b></span>
+                                                        <span class="time">40 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe - <b>Support request</b></span>
+                                                        <span class="time">46 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                             <li class="external">
+                                        <h3 style="text-align: center; width: 100%; display: block; padding: 8px 0; margin:0px; font-size: 15px;"><a href="app_inbox.html">view all</a></h3>
+                                        
+                                    </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            <div class="tab-pane" id="portlet_comments_2">
+                                <div class="portlet-body">
+                                  <ul class="dropdown-menu-list scroller portlet light " style="height: 275px;" data-handle-color="#637283">
+                                        	
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong - <b>Support request</b></span>
+                                                        <span class="time">Just Now </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe - <b>Support request</b></span>
+                                                        <span class="time">16 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar1.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Bob Nilson - <b>Support request</b></span>
+                                                        <span class="time">2 hrs </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong - <b>Support request</b></span>
+                                                        <span class="time">40 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe - <b>Support request</b></span>
+                                                        <span class="time">46 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                             <li class="external">
+                                        <h3 style="text-align: center; width: 100%; display: block; padding: 8px 0; margin:0px; font-size: 15px;"><a href="app_inbox.html">view all</a></h3>
+                                        
+                                    </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            <div class="tab-pane" id="portlet_comments_3">
+                                <div class="portlet-body">
+                                  <ul class="dropdown-menu-list scroller portlet light " style="height: 275px;" data-handle-color="#637283">
+                                        	
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong - <b>Support request</b></span>
+                                                        <span class="time">Just Now </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe - <b>Support request</b></span>
+                                                        <span class="time">16 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar1.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Bob Nilson - <b>Support request</b></span>
+                                                        <span class="time">2 hrs </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong - <b>Support request</b></span>
+                                                        <span class="time">40 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe - <b>Support request</b></span>
+                                                        <span class="time">46 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                             <li class="external">
+                                        <h3 style="text-align: center; width: 100%; display: block; padding: 8px 0; margin:0px; font-size: 15px;"><a href="app_inbox.html">view all</a></h3>
+                                        
+                                    </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                                </ul>
+                            </li>
+                            <!-- END TODO DROPDOWN -->
+                            <li class="separator hide"> </li>
+                            <!-- BEGIN NOTIFICATION DROPDOWN -->
+                            <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                            <!-- DOC: Apply "dropdown-hoverable" class after "dropdown" and remove data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to enable hover dropdown mode -->
+                            <!-- DOC: Remove "dropdown-hoverable" and add data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to the below A element with dropdown-toggle class -->
+                            <li class="dropdown dropdown-extended dropdown-inbox dropdown-dark" id="header_inbox_bar" >
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false">
+                                    <i class="icon-bell"></i>
+                                    <span class="badge badge-primary"> 7 </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="external">
+                                          <ul class="nav nav-tabs">
+                                        <li class="active">
+                                            <a href="#portlet_comments_1" data-toggle="tab"> Latest </a>
+                                        </li>
+                                        <li>
+                                            <a href="#portlet_comments_2" data-toggle="tab"> Popularity </a>
+                                        </li>
+                                        <li>
+                                            <a href="#portlet_comments_3" data-toggle="tab"> Sales </a>
+                                        </li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    	<div class="tab-content portlet-title tabbable-line">
+                            <div class="tab-pane active" id="portlet_comments_1">
+                                <div class="portlet-body">
+                                  <ul class="dropdown-menu-list scroller portlet light " style="height: 275px;" data-handle-color="#637283">
+                                        	
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong - <b>Support request</b></span>
+                                                        <span class="time">Just Now </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe - <b>Support request</b></span>
+                                                        <span class="time">16 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar1.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Bob Nilson - <b>Support request</b></span>
+                                                        <span class="time">2 hrs </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong - <b>Support request</b></span>
+                                                        <span class="time">40 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe - <b>Support request</b></span>
+                                                        <span class="time">46 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                             <li class="external">
+                                        <h3 style="text-align: center; width: 100%; display: block; padding: 8px 0; margin:0px; font-size: 15px;"><a href="app_inbox.html">view all</a></h3>
+                                        
+                                    </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            <div class="tab-pane" id="portlet_comments_2">
+                                <div class="portlet-body">
+                                  <ul class="dropdown-menu-list scroller portlet light " style="height: 275px;" data-handle-color="#637283">
+                                        	
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong - <b>Support request</b></span>
+                                                        <span class="time">Just Now </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe - <b>Support request</b></span>
+                                                        <span class="time">16 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar1.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Bob Nilson - <b>Support request</b></span>
+                                                        <span class="time">2 hrs </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong - <b>Support request</b></span>
+                                                        <span class="time">40 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe - <b>Support request</b></span>
+                                                        <span class="time">46 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                             <li class="external">
+                                        <h3 style="text-align: center; width: 100%; display: block; padding: 8px 0; margin:0px; font-size: 15px;"><a href="app_inbox.html">view all</a></h3>
+                                        
+                                    </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            <div class="tab-pane" id="portlet_comments_3">
+                                <div class="portlet-body">
+                                  <ul class="dropdown-menu-list scroller portlet light " style="height: 275px;" data-handle-color="#637283">
+                                        	
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong - <b>Support request</b></span>
+                                                        <span class="time">Just Now </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe - <b>Support request</b></span>
+                                                        <span class="time">16 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar1.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Bob Nilson - <b>Support request</b></span>
+                                                        <span class="time">2 hrs </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong - <b>Support request</b></span>
+                                                        <span class="time">40 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe - <b>Support request</b></span>
+                                                        <span class="time">46 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                             <li class="external">
+                                        <h3 style="text-align: center; width: 100%; display: block; padding: 8px 0; margin:0px; font-size: 15px;"><a href="app_inbox.html">view all</a></h3>
+                                        
+                                    </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                                </ul>
+                            </li>
+                            <!-- END NOTIFICATION DROPDOWN -->
+                            <li class="separator hide"> </li>
+                            <!-- BEGIN INBOX DROPDOWN -->
+                            <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                            <li class="dropdown dropdown-extended dropdown-inbox dropdown-dark" id="header_inbox_bar">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <i class="icon-envelope-open"></i>
+                                    <span class="badge badge-primary"> 4 </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="external">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active">
+                                            <a href="#portlet_comments_1" data-toggle="tab"> Latest </a>
+                                        </li>
+                                        <li>
+                                            <a href="#portlet_comments_2" data-toggle="tab"> Popularity </a>
+                                        </li>
+                                        <li>
+                                            <a href="#portlet_comments_3" data-toggle="tab"> Sales </a>
+                                        </li>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                    	<div class="tab-content portlet-title tabbable-line">
+                            <div class="tab-pane active" id="portlet_comments_1">
+                                <div class="portlet-body">
+                                  <ul class="dropdown-menu-list scroller portlet light " style="height: 275px;" data-handle-color="#637283">
+                                        	
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong - <b>Support request</b></span>
+                                                        <span class="time">Just Now </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe - <b>Support request</b></span>
+                                                        <span class="time">16 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar1.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Bob Nilson - <b>Support request</b></span>
+                                                        <span class="time">2 hrs </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong - <b>Support request</b></span>
+                                                        <span class="time">40 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe - <b>Support request</b></span>
+                                                        <span class="time">46 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                             <li class="external">
+                                        <h3 style="text-align: center; width: 100%; display: block; padding: 8px 0; margin:0px; font-size: 15px;"><a href="app_inbox.html">view all</a></h3>
+                                        
+                                    </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            <div class="tab-pane" id="portlet_comments_2">
+                                <div class="portlet-body">
+                                  <ul class="dropdown-menu-list scroller portlet light " style="height: 275px;" data-handle-color="#637283">
+                                        	
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong - <b>Support request</b></span>
+                                                        <span class="time">Just Now </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe - <b>Support request</b></span>
+                                                        <span class="time">16 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar1.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Bob Nilson - <b>Support request</b></span>
+                                                        <span class="time">2 hrs </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong - <b>Support request</b></span>
+                                                        <span class="time">40 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe - <b>Support request</b></span>
+                                                        <span class="time">46 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                             <li class="external">
+                                        <h3 style="text-align: center; width: 100%; display: block; padding: 8px 0; margin:0px; font-size: 15px;"><a href="app_inbox.html">view all</a></h3>
+                                        
+                                    </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            <div class="tab-pane" id="portlet_comments_3">
+                                <div class="portlet-body">
+                                  <ul class="dropdown-menu-list scroller portlet light " style="height: 275px;" data-handle-color="#637283">
+                                        	
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong - <b>Support request</b></span>
+                                                        <span class="time">Just Now </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe - <b>Support request</b></span>
+                                                        <span class="time">16 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar1.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Bob Nilson - <b>Support request</b></span>
+                                                        <span class="time">2 hrs </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong - <b>Support request</b></span>
+                                                        <span class="time">40 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe - <b>Support request</b></span>
+                                                        <span class="time">46 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                             <li class="external">
+                                        <h3 style="text-align: center; width: 100%; display: block; padding: 8px 0; margin:0px; font-size: 15px;"><a href="app_inbox.html">view all</a></h3>
+                                        
+                                    </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                                </ul>
+                            </li>
+                          
+                            
+                            <!-- BEGIN USER LOGIN DROPDOWN -->
+                            <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                            <li class="dropdown dropdown-user dropdown-dark">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <span class="username username-hide-on-mobile"> Nick </span>
+                                    <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
+                                    <img alt="" class="img-circle" src="assets/layouts/layout/img/avatar9.jpg" /> </a>
+                                <ul class="dropdown-menu dropdown-menu-default">
+                                    <li>
+                                        <a href="page_user_profile_1.html">
+                                            <i class="icon-user"></i> My Profile </a>
+                                    </li>
+                                    <li>
+                                        <a href="app_calendar.html">
+                                            <i class="icon-calendar"></i> My Calendar </a>
+                                    </li>                                   
+                                     <li>
+                                        <a href="app_calendar.html">
+                                            <i class="icon-settings"></i> Settings </a>
+                                    </li>
+                                    <li class="divider"> </li>
+                                   
+                                    <li>
+                                        <a href="page_user_login_1.html">
+                                            <i class="icon-key"></i> Log Out </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- END USER LOGIN DROPDOWN -->
+                            <!-- BEGIN QUICK SIDEBAR TOGGLER -->
+                            <li class="dropdown dropdown-extended quick-sidebar-toggler">
+                                <span class="sr-only">Toggle Quick Sidebar</span>
+                                <i class="icon-logout"></i>
+                            </li>
+                            <!-- END QUICK SIDEBAR TOGGLER -->
+                        </ul>
+                    </div>
+                    <!-- END TOP NAVIGATION MENU -->
+                </div>
+                <!-- END PAGE TOP -->
+            </div>
+            <!-- END HEADER INNER -->
+        </div>
+        <!-- END HEADER -->
+        <!-- BEGIN HEADER & CONTENT DIVIDER -->
+        <div class="clearfix"> </div>
+        <!-- END HEADER & CONTENT DIVIDER -->
+        <!-- BEGIN CONTAINER -->
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <div class="page-sidebar-wrapper">
+                <!-- BEGIN SIDEBAR -->
+                <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                <div class="page-sidebar navbar-collapse collapse">
+                    <!-- BEGIN SIDEBAR MENU -->
+                    <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+                    <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+                    <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+                    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                    <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+                    <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                   <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                        <li class="nav-item start active open">
+                            <a href="index.html" class="nav-link nav-toggle">
+                                <i class="icon-bulb"></i>
+                                <span class="title">Dashboard</span>
+                                <span class="selected"></span>
+                               
+                            </a>
+                           
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+
+                                <i class="icon-envelope"></i>
+                                <span class="title">Mails</span>
+                                 <span class="arrow"></span>
+                                 <span class="badge badge-primary"> 4 </span>
+                            </a>
+                          <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="inbox.html" class="nav-link ">
+                                        <span class="title">New Message</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                   <a href="inbox.html" class="nav-link ">
+                                        <span class="title">Inbox</span>
+                                        <span class="badge badge-primary"> 4 </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="inbox.html" class="nav-link ">
+                                        <span class="title">Sent</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="inbox.html" class="nav-link ">
+                                        <span class="title">Deleted</span>
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                     
+                        <li class="nav-item ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-camera"></i>
+                                <span class="title">Gallery</span>
+                                 <span class="arrow"></span>
+                                
+                            </a>
+                          <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="admin-gallery-list.html" class="nav-link ">
+                                        <span class="title">Add New Image/Album</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-gallery-list.html" class="nav-link ">
+                                        <span class="title">All Images/ Albumds</span>
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-notebook"></i>
+                                <span class="title">Blog</span>
+                               <span class="arrow"></span>
+                               <span class="badge badge-primary"> 12 </span>
+                            </a>
+                           <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="admin-blog-list.html" class="nav-link ">
+                                        <span class="title">Post New</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-blog-list.html" class="nav-link ">
+                                        <span class="title">New Category</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-blog-list.html" class="nav-link ">
+                                        <span class="title">All Blogs</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-blog-list.html" class="nav-link ">
+                                        <span class="title">All Category</span>
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-basket"></i>
+                                <span class="title">Store</span>
+                                 <span class="arrow"></span>
+                                 <span class="badge badge-primary"> 114 </span>
+                              </a>
+                          <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="admin-store-list.html" class="nav-link ">
+                                        <span class="title">New Item</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-store-list.html" class="nav-link ">
+                                        <span class="title">New Category</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-store-list.html" class="nav-link ">
+                                        <span class="title">New Service</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-store-list.html" class="nav-link ">
+                                        <span class="title">Store</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-store-list.html" class="nav-link ">
+                                        <span class="title">Service</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-store-list.html" class="nav-link ">
+                                        <span class="title">Promotions</span>
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item  ">
+                            <a href="admin-my-story.html" class="nav-link nav-toggle">
+                                <i class="icon-star"></i>
+                                <span class="title">Our Story</span>
+                              
+                            </a>
+                          
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-call-in"></i>
+                                <span class="title">Contact</span>
+                               <span class="arrow"></span>
+                            </a>
+                           <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="admin-contact.html" class="nav-link ">
+                                        <span class="title">Contact Page</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-contact.html" class="nav-link ">
+                                        <span class="title">Calendar</span>
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-user"></i>
+                                <span class="title">Users</span>
+                                <span class="arrow"></span>
+                                <span class="badge badge-primary"> 4 </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="admin-user-list.html" class="nav-link ">
+                                        <span class="title">New Users/ Group</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-user-list.html" class="nav-link ">
+                                        <span class="title">Active Users</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-user-list.html" class="nav-link ">
+                                        <span class="title">Activity</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-paper-plane"></i>
+                                <span class="title">Repots</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="admin-report-list.html" class="nav-link ">
+                                        <span class="title">Photo Reports</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-report-list.html" class="nav-link ">
+                                        <span class="title">Album Reports</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-report-list.html" class="nav-link ">
+                                        <span class="title">Blog Reports</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-report-list.html" class="nav-link ">
+                                        <span class="title">Sales Reports</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="maps_vector.html" class="nav-link ">
+                                        <span class="title">User Reports</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                      
+                       
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-feed"></i>
+                                <span class="title">Data</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="admin-data.html" class="nav-link ">
+                                        <span class="title">Tags</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-data.html" class="nav-link ">
+                                        <span class="title">Categories</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-data.html" class="nav-link ">
+                                        <span class="title">Links</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-data.html" class="nav-link ">
+                                        <span class="title">Awards</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-data.html" class="nav-link ">
+                                        <span class="title">Locations</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="admin-data.html" class="nav-link ">
+                                        <span class="title">Email List</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                         <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-layers"></i>
+                                <span class="title">Home Page</span>
+                            </a>
+                         
+                        </li>
+
+                         <li class="nav-item  ">
+                            <a href="admin-other-page-manager.html" class="nav-link nav-toggle">
+                                <i class="icon-layers"></i>
+                                <span class="title">Other Pages</span>
+                            </a>
+                         
+                        </li>
+
+                        </li>
+                    </ul>
+                    <!-- END SIDEBAR MENU -->
+                </div>
+                <!-- END SIDEBAR -->
+            </div>
+            <!-- END SIDEBAR -->
+            <!-- BEGIN CONTENT -->
+            <div class="page-content-wrapper">
+                <!-- BEGIN CONTENT BODY -->
+                <div class="page-content1">
+                    <!-- BEGIN PAGE HEAD-->
+                    <div class="page-head">
+                        <!-- BEGIN PAGE TITLE -->
+                        <div class="page-title">
+                            <h1>Most Viewed Albums </h1>
+                        </div>
+                        <!-- END PAGE TITLE -->
+                       
+                    </div>
+                    <!-- END PAGE HEAD-->
+                   
+                    <!-- BEGIN PAGE BASE CONTENT -->
+                    <div class="row">
+                        <div class="Featured-album-section">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="Featured-blog-posts1 active">
+                            		<div class="Featured-blog-img1">
+                                        <img src="assets/layouts/layout4/img/blog-image.png" class="responsive" alt="blog img">
+                            		</div>
+                            		<div class="Featured-blog-text1">
+                            			<h3><a href="#">A Blog about Photography</a></h3>
+                            			<p class="blog-date"> 2 Jan 2018  |  240 Photos </p>
+										
+                            		</div>
+                                                     
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="Featured-blog-posts1">
+                                    <div class="Featured-blog-img1">
+                                        <img src="assets/layouts/layout4/img/blog-image.png" class="responsive" alt="blog img">
+                                    </div>
+                                    <div class="Featured-blog-text1">
+                                        <h3><a href="#">A Blog about Photography</a></h3>
+                                        <p class="blog-date"> 2 Jan 2018  |   Photography </p>
+                                       
+                                    </div>
+                                                     
+                            </div>
+                        </div>
+                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="Featured-blog-posts1">
+                                    <div class="Featured-blog-img1">
+                                        <img src="assets/layouts/layout4/img/blog-image.png" class="responsive" alt="blog img">
+                                    </div>
+                                    <div class="Featured-blog-text1">
+                                        <h3><a href="#">A Blog about Photography</a></h3>
+                                        <p class="blog-date"> 2 Jan 2018  |   Photography </p>
+                                        
+                                    </div>
+                                                     
+                            </div>
+                        </div>
+                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="Featured-blog-posts1">
+                                    <div class="Featured-blog-img1">
+                                        <img src="assets/layouts/layout4/img/blog-image.png" class="responsive" alt="blog img">
+                                    </div>
+                                    <div class="Featured-blog-text1">
+                                        <h3><a href="#">A Blog about Photography</a></h3>
+                                        <p class="blog-date"> 2 Jan 2018  |   Photography </p>
+                                       
+                                    </div>
+                                                     
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                     
+                    </div>
+
+                    <div class="row">
+                    	<div class="col-lg-12 col-xs-12 col-sm-12">
+                            <div class="Darkblock light bordered">
+                               <div class="Filter-block">
+                                <div class="col-lg-2 col-xs-12 col-sm-2">    
+                                    <div class="Add-new">
+                                        <a data-toggle="modal" href="#basic">
+                                        <button class="btn-type2" value="add" name="End">ADD NEW +</button> </a></div>
+                                </div>
+                                <div class="col-lg-10 col-xs-12 col-sm-10">
+                               <div class="Block-filter">
+                                             <div class="filter-check1">
+                                                <label>
+                                                    <input type="checkbox" class="checkbox" name="1" value="1">  Check All </label>
+                                             </div> 
+                                             <div class="filter-action-icons">
+                                                    <a class="filter-action-icon"><i class="fa fa-eye"></i></a>
+                                                    <a class="filter-action-icon"><i class="fa fa-pencil"></i></a>
+                                                    <a class="filter-action-icon"><i class="fa fa-check-circle-o"></i></a>
+
+                                                    <a class="filter-action-icon"><i class="fa fa-trash"></i></a>
+                                             </div>  
+                                             <div class="filter-info-text1">
+                                                  Total:  12 Albums, 1220 Photos
+                                             </div>
+                                             <div class="filter-sorting">
+                                                    <select class="dropdown1">
+                                                      <option value="1">Newest</option>
+                                                      <option value="2">Oldest</option>
+                                                    </select>
+                                             </div> 
+                                              <div class="clearfix"></div>     
+
+                                </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                </div>  
+                               
+                                
+
+
+                        <div class="Gallery-listing-block">
+                           <div class="Gallery-img-box width1">
+                              <img src="assets/layouts/layout4/img/gallery/01.jpg" alt="Album Name">
+                              <div class="Gallery-dropdown">
+                                 <ul>
+                                    <li><a href="#"><i class="fa fa-comments-o"></i> &nbsp; Comments: 20</a></li>
+                                    <li><a href="#"><i class="fa fa-eye"></i> &nbsp; Views: 20</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> &nbsp; Edit Album</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-down"></i> &nbsp; Download: 20</a></li>
+                                    <li><a href="#"><i class="fa fa-check-circle-o"></i> &nbsp; Hide Album</a></li>
+                                    <li><a href="#"><i class="fa fa-trash"></i> &nbsp; Delete Album</a></li>
+
+                                 </ul>
+                              </div>
+                           </div>
+                            <div class="Gallery-img-box width2">
+                              <img src="assets/layouts/layout4/img/gallery/02.jpg" alt="Album Name">
+                             <div class="Gallery-dropdown">
+                                 <ul>
+                                    <li><a href="#"><i class="fa fa-comments-o"></i> &nbsp; Comments: 20</a></li>
+                                    <li><a href="#"><i class="fa fa-eye"></i> &nbsp; Views: 20</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> &nbsp; Edit Album</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-down"></i> &nbsp; Download: 20</a></li>
+                                    <li><a href="#"><i class="fa fa-check-circle-o"></i> &nbsp; Hide Album</a></li>
+                                    <li><a href="#"><i class="fa fa-trash"></i> &nbsp; Delete Album</a></li>
+
+                                 </ul>
+                              </div>
+                           </div>
+                            <div class="Gallery-img-box width3">
+                              <img src="assets/layouts/layout4/img/gallery/03.jpg" alt="Album Name">
+                             <div class="Gallery-dropdown">
+                                 <ul>
+                                    <li><a href="#"><i class="fa fa-comments-o"></i> &nbsp; Comments: 20</a></li>
+                                    <li><a href="#"><i class="fa fa-eye"></i> &nbsp; Views: 20</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> &nbsp; Edit Album</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-down"></i> &nbsp; Download: 20</a></li>
+                                    <li><a href="#"><i class="fa fa-check-circle-o"></i> &nbsp; Hide Album</a></li>
+                                    <li><a href="#"><i class="fa fa-trash"></i> &nbsp; Delete Album</a></li>
+
+                                 </ul>
+                              </div>
+                           </div>
+                              <div class="Gallery-img-box width1">
+                              <img src="assets/layouts/layout4/img/gallery/01.jpg" alt="Album Name">
+                              <div class="Gallery-dropdown">
+                                 <ul>
+                                    <li><a href="#"><i class="fa fa-comments-o"></i> &nbsp; Comments: 20</a></li>
+                                    <li><a href="#"><i class="fa fa-eye"></i> &nbsp; Views: 20</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> &nbsp; Edit Album</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-down"></i> &nbsp; Download: 20</a></li>
+                                    <li><a href="#"><i class="fa fa-check-circle-o"></i> &nbsp; Hide Album</a></li>
+                                    <li><a href="#"><i class="fa fa-trash"></i> &nbsp; Delete Album</a></li>
+
+                                 </ul>
+                              </div>
+                           </div>
+                            <div class="Gallery-img-box width2">
+                              <img src="assets/layouts/layout4/img/gallery/02.jpg" alt="Album Name">
+                             <div class="Gallery-dropdown">
+                                 <ul>
+                                    <li><a href="#"><i class="fa fa-comments-o"></i> &nbsp; Comments: 20</a></li>
+                                    <li><a href="#"><i class="fa fa-eye"></i> &nbsp; Views: 20</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> &nbsp; Edit Album</a></li>
+                                    <li><a href="#"><i class="fa fa-arrow-down"></i> &nbsp; Download: 20</a></li>
+                                    <li><a href="#"><i class="fa fa-check-circle-o"></i> &nbsp; Hide Album</a></li>
+                                    <li><a href="#"><i class="fa fa-trash"></i> &nbsp; Delete Album</a></li>
+
+                                 </ul>
+                              </div>
+                           </div>
+               
+                                 <div class="clearfix"></div>
+                             </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    </div>
+
+
+                 
+                  
+                    <!-- END PAGE BASE CONTENT -->
+                </div>
+                <!-- END CONTENT BODY -->
+ 
+
+                            </div>
+                        </div>
+
+
+
+             </div>
+              <!-- Right side CONTENT -->
+
+<!--  Compose Message Model Div Start here  -->
+   <div class="modal fade " id="basic" tabindex="-1" role="basic" aria-hidden="true">
+                                        <div class="modal-dialog width90">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                    <h4 class="modal-title">Post New Blog</h4>
+                                                </div>
+                                                <div class="modal-body"> 
+                                   
+                                                    <div>
+
+  <!-- Nav tabs -->
+  <div class="left-tabs width15">
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">The Post</a></li>
+    <li role="presentation"><a href="#security" aria-controls="security" role="tab" data-toggle="tab">Security</a></li>
+    <li role="presentation"><a href="#images" aria-controls="images" role="tab" data-toggle="tab">Images</a></li>
+    <li role="presentation"><a href="#location" aria-controls="location" role="tab" data-toggle="tab">Location</a></li>
+     <li role="presentation"><a href="#tags" aria-controls="tags" role="tab" data-toggle="tab">Tags</a></li>
+      <li role="presentation"><a href="#categories" aria-controls="categories" role="tab" data-toggle="tab">Categories</a></li>
+       <li role="presentation"><a href="#links" aria-controls="links" role="tab" data-toggle="tab">Links</a></li>
+        <li role="presentation"><a href="#awards" aria-controls="awards" role="tab" data-toggle="tab">Awards</a></li>
+  </ul>
+</div>
+<div class="right-content">
+   <div class="photo-preview">
+      <img src="assets/layouts/layout4/img/photo-img.jpg" class="photo-preview11">
+   </div>
+   <div class="photo-preview-info">
+      Image size: Auto Detect &nbsp; &nbsp;
+      <label><input type="radio" name="" >  Panorama </label> &nbsp;
+       <label><input type="radio" name="" >  Portrait </label> &nbsp;
+        <label><input type="radio" name="" >  Regular   </label>
+
+
+   </div>
+</div>
+<div class="left-content width38">
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+        <div class="form-group">
+                <label class="col-md-12 control-label">Title:</label>
+                <div class="col-md-12">
+                    <input type="text" class="form-control from-text1" placeholder="Title here">
+                </div>
+        </div>
+         <div class="form-group">
+                <label class="col-md-12 control-label">Description:</label>
+                <div class="col-md-12">
+                    <textarea  class="form-control from-textarea2">Content here...</textarea>
+                </div>
+        </div>
+
+<div class="form-group">
+   <p>Albums:</p>
+               <div class="Location-tags"> Water  &nbsp;  
+                <a class="close1"> </a></div>
+                <div class="Location-tags"> Water  &nbsp;  
+                <a class="close1"> </a></div>
+                <a href="#"><i class="fa fa-plus"></i> &nbsp; Create New</a>  
+        
+
+</div>
+
+
+                <div class="mail-button-block">
+                     <button class="btn-type1" value="End Send" Cancel="End">Cancel</button>
+                <button class="btn-type1" value="End Cancel" name="Apply">Apply</button>
+               
+
+                </div>
+
+
+
+
+    </div>
+    <div role="tabpanel" class="tab-pane" id="security">
+      <div class="form-group">
+                <label class="col-md-5 control-label">Blog Post Privacy:</label>
+                <div class="col-md-7">
+                    
+                    <select name="security" class="form-control from-text1" form="carform">
+                      <option value="private">Private</option>
+                      <option value="public">Public</option>
+                    </select>                   
+                     <input type="text" class="form-control from-text1" placeholder="Password">
+
+                </div>
+        </div>  
+        <div class="form-group field-space15 clearfix">
+                <label class="col-md-8 control-label">Allow users to save any blog photos:</label>
+                <div class="col-md-4 text-right">                    
+                   <input type="checkbox" checked data-toggle="toggle">
+                </div>
+        </div>
+        <div class="form-group field-space15 clearfix" >
+                <label class="col-md-8 control-label">Allow users to share this post:</label>
+                <div class="col-md-4 text-right">                    
+                   <input type="checkbox" checked data-toggle="toggle">
+                </div>
+        </div>
+        <div class="form-group field-space15 clearfix">
+                <label class="col-md-8 control-label">Web Search-Able:</label>
+                <div class="col-md-4 text-right">                    
+                   <input type="checkbox" checked data-toggle="toggle">
+                </div>
+        </div>
+        <div class="form-group field-space15 clearfix">
+                <label class="col-md-8 control-label">STaeLTH Photo Search - Able:</label>
+                <div class="col-md-4 text-right">                    
+                   <input type="checkbox" checked data-toggle="toggle">
+                </div>
+        </div>
+        <div class="form-group field-space15 clearfix">
+                <label class="col-md-8 control-label">Prevent Typical Web Right Click:</label>
+                <div class="col-md-4 text-right">                    
+                   <input type="checkbox" checked data-toggle="toggle">
+                </div>
+        </div>
+         <div class="form-group field-space15 clearfix">
+                <label class="col-md-8 control-label">Allow Users Commetns:</label>
+                <div class="col-md-4 text-right">                    
+                   <input type="checkbox" checked data-toggle="toggle">
+                </div>
+        </div>
+         <div class="form-group field-space15 clearfix">
+                <label class="col-md-8 control-label">Allow User Likes:</label>
+                <div class="col-md-4 text-right">                    
+                   <input type="checkbox" checked data-toggle="toggle">
+                </div>
+        </div>
+        <div class="mail-button-block">
+             <button class="btn-type1" value="End Send" Cancel="End">Cancel</button>
+                <button class="btn-type1" value="End Cancel" name="Apply">Apply</button>
+        </div>
+
+
+
+
+    </div>
+    <div role="tabpanel" class="tab-pane" id="images">
+        <div class="Image-uploader">
+            <img src="assets/layouts/layout4/img/upload-images.jpg" class="responsive">
+        </div>
+         <div class="mail-button-block">
+            <button class="btn-type1" value="End Send" Cancel="End">Cancel</button>
+            <button class="btn-type1" value="End Cancel" name="Upload">Upload</button>
+        </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane" id="location">
+        <div class="Location-map">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317715.71193282085!2d-0.38178515365288046!3d51.528735196636745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2sin!4v1521533332273" width="100%" height="100%" frameborder="0" style="border:0px; min-height: 350px;" allowfullscreen></iframe>
+        </div>
+<div class="form-group">
+                <label class="col-md-5 control-label">Select your City or Country:</label>
+                <div class="col-md-7">          
+                     <input type="text" class="form-control from-text1" placeholder="Type your loation here...">
+
+                </div>
+        </div> 
+        <div class="form-group field-space15 clearfix">
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; London  &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Newyork &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Delhi &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; France &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; US &nbsp;  
+                <a class="close1"> </a></div>
+
+        </div> 
+         <div class="mail-button-block">
+            <button class="btn-type1" value="End Send" Cancel="End">Cancel</button>
+            <button class="btn-type1" value="End Cancel" name="Apply">Apply</button>
+        </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tags">
+        <div class="Tags-block">
+           <div class="form-group field-space15 clearfix">
+                <label class="col-md-8 control-label">List of Meta Tags:</label>
+                <div class="Mutli-select-block">
+                    <ul>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Water </label> </li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Nature</label> </li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Sky </label></li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Night </label></li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; People </label></li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Jungle </label></li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Wild life</label> </li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Wild life </label></li>
+                    </ul>
+                </div>
+
+        </div>
+
+        </div>
+
+        <div class="form-group field-space15 clearfix">
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Water  &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Driving &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Family &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Sky &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Nature &nbsp;  
+                <a class="close1"> </a></div>
+
+        </div> 
+         <div class="mail-button-block">
+            <button class="btn-type1" value="End Send" Cancel="End">Cancel</button>
+            <button class="btn-type1" value="End Cancel" name="Apply">Apply</button>
+        </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane" id="categories">
+        <div class="Tags-block">
+           <div class="form-group field-space15 clearfix">
+                <label class="col-md-8 control-label">List of Categories:</label>
+                <div class="Mutli-select-block">
+                    <ul>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Water </label> </li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Nature</label> </li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Sky </label></li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Night </label></li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; People </label></li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Jungle </label></li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Wild life</label> </li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Wild life </label></li>
+                    </ul>
+                </div>
+
+        </div>
+
+        </div>
+
+        <div class="form-group field-space15 clearfix">
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Water  &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Driving &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Family &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Sky &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Nature &nbsp;  
+                <a class="close1"> </a></div>
+
+        </div> 
+         <div class="mail-button-block">
+            <button class="btn-type1" value="End Send" Cancel="End">Cancel</button>
+            <button class="btn-type1" value="End Cancel" name="Apply">Apply</button>
+        </div>
+
+
+    </div>
+    <div role="tabpanel" class="tab-pane" id="links"><div class="Tags-block">
+           <div class="form-group field-space15 clearfix">
+                <label class="col-md-8 control-label">List of Links:</label>
+                <div class="Mutli-select-block">
+                    <ul>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Water </label> </li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Nature</label> </li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Sky </label></li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Night </label></li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; People </label></li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Jungle </label></li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Wild life</label> </li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Wild life </label></li>
+                    </ul>
+                </div>
+
+        </div>
+
+        </div>
+
+        <div class="form-group field-space15 clearfix">
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Water  &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Driving &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Family &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Sky &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Nature &nbsp;  
+                <a class="close1"> </a></div>
+
+        </div> 
+         <div class="mail-button-block">
+            <button class="btn-type1" value="End Send" Cancel="End">Cancel</button>
+            <button class="btn-type1" value="End Cancel" name="Apply">Apply</button>
+        </div></div>
+    <div role="tabpanel" class="tab-pane" id="awards"><div class="Tags-block">
+           <div class="form-group field-space15 clearfix">
+                <label class="col-md-8 control-label">List of Awards:</label>
+                <div class="Mutli-select-block">
+                    <ul>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Water </label> </li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Nature</label> </li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Sky </label></li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Night </label></li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; People </label></li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Jungle </label></li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Wild life</label> </li>
+                        <li><label><input type="checkbox" class="checkbox" > &nbsp; &nbsp; Wild life </label></li>
+                    </ul>
+                </div>
+
+        </div>
+
+        </div>
+
+        <div class="form-group field-space15 clearfix">
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Water  &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Driving &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Family &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Sky &nbsp;  
+                <a class="close1"> </a></div>
+            <div class="Location-tags"><i class="fa fa-map-marker"></i> &nbsp; Nature &nbsp;  
+                <a class="close1"> </a></div>
+
+        </div> 
+         <div class="mail-button-block">
+            <button class="btn-type1" value="End Send" Cancel="End">Cancel</button>
+            <button class="btn-type1" value="End Cancel" name="Apply">Apply</button>
+        </div></div>
+  </div>
+</div>
+</div>
+
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                   
+
+                                                </div>
+                                            </div>
+                                            <!-- /.modal-content -->
+                                        </div>
+                                        <!-- /.modal-dialog -->
+                                    </div>
+ <!--  Compose Message Model Div Ends here  -->
+
+
+
+            <!-- BEGIN QUICK SIDEBAR -->
+           
+            <!-- END QUICK SIDEBAR -->
+        </div>
+        <!-- END CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        <div class="page-footer">
+            <div class="page-footer-inner"> 2018 &copy; Stealth admin
+                
+            </div>
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+  
+      
+        <!-- END QUICK NAV -->
+        <!--[if lt IE 9]>
+            </div>
+            <!-- END CONTENT -->
+
+
+<script src="assets/global/plugins/respond.min.js"></script>
+<script src="assets/global/plugins/excanvas.min.js"></script> 
+<script src="assets/global/plugins/ie8.fix.min.js"></script> 
+<![endif]-->
+        <!-- BEGIN CORE PLUGINS -->
+        <script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="assets/global/plugins/moment.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+
+        <script src="assets/global/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/horizontal-timeline/horizontal-timeline.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="assets/global/scripts/app.min.js" type="text/javascript"></script>
+        <!-- END THEME GLOBAL SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+        <!-- BEGIN THEME LAYOUT SCRIPTS -->
+        <script src="assets/layouts/layout4/scripts/layout.min.js" type="text/javascript"></script>
+        <script src="assets/layouts/layout4/scripts/demo.min.js" type="text/javascript"></script>
+        <script src="assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+        <script src="assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+        <!-- END THEME LAYOUT SCRIPTS -->
+        <script>
+            $(document).ready(function()
+            {
+                $('#clickmewow').click(function()
+                {
+                    $('#radio1003').attr('checked', 'checked');
+                });
+            })
+        </script>
+
+        <script src="assets/pages/scripts/portfolio-4.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+
+
+    </body>
+
+</html>
